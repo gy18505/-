@@ -8,14 +8,16 @@
   <meta name="keywords" content="">
   <title>全心文化</title>
   <link rel="shortcut icon" href="update/logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file://index.html -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+  <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -143,19 +145,28 @@
     </ul>
   </div>
   <div class="banner">
-    <div class="banner-wrapper">
-      <div class="banner-item bg-cover rellax" data-rellax-speed="-10" style="background-image:url('update/banner-bg.jpg')">
+    <div class="banner-wrapper swiper-wrapper">
+      <div class="banner-item bg-cover rellax swiper-slide" data-rellax-speed="-10" style="background-image:url('update/banner-bg.jpg')">
         <div class="banner-content container">
-          <h1 class="banner-title clamp-3 wow bounceInLeft rellax" data-rellax-speed="0">SEO搜索环境组合战术, 加强媒体覆盖面，提升品牌声誉</h1>
-          <div class="banner-action wow bounceInLeft rellax" data-rellax-speed="0">
-            <button class="btn btn-ctm">关于我们</button>
-            <button class="btn btn-ctm">了解方案</button>
+          <h1 class="banner-title clamp-3 bounceInLeft rellax ani" swiper-animate-effect="bounceInLeft" data-rellax-speed="0">SEO搜索环境组合战术, 加强媒体覆盖面，提升品牌声誉</h1>
+          <div class="banner-action bounceInLeft rellax ani" swiper-animate-effect="bounceInLeft" data-rellax-speed="0">
+            <button class="btn-ctm">关于我们</button>
+            <button class="btn-ctm">了解方案</button>
+          </div>
+        </div>
+      </div>
+      <div class="banner-item bg-cover rellax swiper-slide" data-rellax-speed="-10" style="background-image:url('update/banner-bg.jpg')">
+        <div class="banner-content container">
+          <h1 class="banner-title clamp-3 bounceInLeft rellax ani" swiper-animate-effect="bounceInLeft" data-rellax-speed="0">SEO搜索环境组合战术</h1>
+          <div class="banner-action bounceInLeft rellax ani" swiper-animate-effect="bounceInLeft" data-rellax-speed="0">
+            <button class="btn-ctm">关于我们</button>
+            <button class="btn-ctm">了解方案</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="services text-center">
+  <div class="service text-center">
     <div class="container content-box">
       <div class="row">
         <h3 class="title content-title bottom-gap-30  col-md-4 col-md-offset-4">我们提供什么服务？</h3>
@@ -166,7 +177,7 @@
       <div class="service-list bottom-gap-30 row">
         <div class="col-md-2 col-sm-6 col-xs-6 wow bounceInUp">
           <div class="service-logo bottom-gap-20">
-            <img src="images/services-monitor.png">
+            <img src="images/service-monitor.png" data-logo="service-monitor">
           </div>
           <h4 class="service-name bottom-gap-20">舆情监测</h4>
           <div class="bar-black bottom-gap-20"></div>
@@ -174,7 +185,7 @@
         </div>
         <div class=" col-md-2 col-sm-6 col-xs-6 wow bounceInUp">
           <div class="service-logo bottom-gap-20">
-            <img src="images/services-marketing.png">
+            <img src="images/service-marketing.png" data-logo="service-marketing">
           </div>
           <h4 class="service-name bottom-gap-20">舆情监测</h4>
           <div class="bar-black bottom-gap-20"></div>
@@ -182,7 +193,7 @@
         </div>
         <div class=" col-md-2 col-sm-6 col-xs-6 wow bounceInUp">
           <div class="service-logo bottom-gap-20">
-            <img src="images/services-activity.png">
+            <img src="images/service-activity.png" data-logo="service-activity">
           </div>
           <h4 class="service-name bottom-gap-20">舆情监测</h4>
           <div class="bar-black bottom-gap-20"></div>
@@ -190,7 +201,7 @@
         </div>
         <div class=" col-md-2 col-sm-6 col-xs-6 wow bounceInUp">
           <div class="service-logo bottom-gap-20">
-            <img src="images/services-design.png" class="smaller">
+            <img src="images/service-design.png" data-logo="service-design" class="smaller">
           </div>
           <h4 class="service-name bottom-gap-20">舆情监测</h4>
           <div class="bar-black bottom-gap-20"></div>
@@ -198,7 +209,7 @@
         </div>
         <div class=" col-md-2 col-sm-6 col-xs-6 wow bounceInUp">
           <div class="service-logo bottom-gap-20">
-            <img src="images/services-media.png" class="smaller">
+            <img src="images/service-media.png" data-logo="service-media" class="smaller">
           </div>
           <h4 class="service-name bottom-gap-20">舆情监测</h4>
           <div class="bar-black bottom-gap-20"></div>
@@ -206,7 +217,7 @@
         </div>
         <div class=" col-md-2 col-sm-6 col-xs-6 wow bounceInUp">
           <div class="service-logo bottom-gap-20">
-            <img src="images/services-video.png">
+            <img src="images/service-video.png" data-logo="service-video">
           </div>
           <h4 class="service-name bottom-gap-20">舆情监测</h4>
           <div class="bar-black bottom-gap-20"></div>
@@ -316,7 +327,7 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-ctm">更多客户案例</button>
+        <button class="btn-ctm">更多客户案例</button>
       </div>
     </div>
   </div>
@@ -325,7 +336,7 @@
       <img src="images/improvemet-upload.png" class="bottom-gap-30">
       <h3 class="bottom-gap-30">技术+全渠道实现百度全平台占位优化</h3>
       <p class="clamp-2 bottom-gap-30">搜索环境组合战术,加强媒体覆盖面，提升品牌声誉</p>
-      <button class="btn btn-ctm">帮我提升品牌</button>
+      <button class="btn-ctm">帮我提升品牌</button>
     </div>
   </div>
   <div class="news">
@@ -368,7 +379,7 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-ctm">帮我提升品牌</button>
+        <button class="btn-ctm">帮我提升品牌</button>
       </div>
     </div>
   </div>
@@ -382,13 +393,13 @@
             <h4 class=" bottom-gap-20">联系信息</h4>
             <ul class="contact-list">
               <li class="ellipsis">
-                <img src="images/contact-address.png" class="ls-img">广东省广州市XXX区XXX路XXX大厦1406室</li>
+                <img src="images/contact-address-transparent.png" class="ls-img">广东省广州市XXX区XXX路XXX大厦1406室</li>
               <li>
-                <img src="images/contact-phone.png" class="ls-img">400-444-444</li>
+                <img src="images/contact-phone-transparent.png" class="ls-img">400-444-444</li>
               <li>
-                <img src="images/contact-email.png" class="ls-img">admin@quanxin.com</li>
+                <img src="images/contact-email-transparent.png" class="ls-img">admin@quanxin.com</li>
               <li>
-                <img src="images/contact-website.png" class="ls-img">www.quanxin.com</li>
+                <img src="images/contact-website-transparent.png" class="ls-img">www.quanxin.com</li>
             </ul>
           </div>
         </div>
@@ -417,7 +428,7 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-sm-12 col-ctm">
-                <button class="btn btn-ctm">马上留言</button>
+                <button class="btn-ctm">马上留言</button>
               </div>
             </div>
           </div>
@@ -484,10 +495,13 @@
       </div>
     </div>
   </div>
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/rellax.min.js"></script>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/swiper.jquery.js"></script>
+  <script src="js/swiper.animate1.0.2.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/rellax.js"></script>
+  <script src="js/common.jq.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
