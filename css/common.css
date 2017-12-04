@@ -192,11 +192,12 @@ ul li a:hover {
   width: 124px;
   height: 80px;
   display: inline-block;
-  line-height: 80px;
-  text-align: center;
+  border-bottom: 5px solid transparent; 
   color: #101010;
   font-size: 18px;
-  border-bottom: 5px solid transparent;
+  line-height: 80px;
+  text-align: center;
+  text-decoration: none;
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
