@@ -205,9 +205,6 @@ ul li a:hover {
 }
 
 @media(min-width:992px) and (max-width:1200px) {
-  .navbar-menu .menu-list {
-    padding-right: 30px;
-  }
   .navbar-menu .menu-list li a {
     width: 100px;
   }
