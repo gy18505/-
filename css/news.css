@@ -1,7 +1,16 @@
 .btn-ctm{
-  margin: 10px;
+  width: 150px;
+  height: 46px;
+  line-height: 46px;
+  padding: 0;
+  font-size: 14px;
  }
- .news-banner{
+ @media (max-width:480px){
+  .btn-ctm{
+    width: 33.33%;
+  }
+ }
+.news-banner{
   height: 250px;
   background-position: top left;
   overflow: hidden;
@@ -16,6 +25,10 @@
   background: #fff;
   overflow: hidden;
  }
+.news-main .news-menu{
+  background: #f2f2f2;
+  font-size: 0;
+}
 .news-menu .btn-ctm:not(.active){
   background: #ebebeb;
   border: none;
@@ -24,7 +37,7 @@
   background: rgba(255, 88, 7, .7);
 }
 .news-box .news-list{
-  min-height: 700px;
+  height: auto;
   padding: 30px 25px;
   overflow: hidden;
 }
@@ -45,8 +58,25 @@
 .news-box .news-pagination .btn-ctm{
   width: 40px;
   height: 40px;
-  border-width: 2px; 
+  line-height: 36px;
+  border: 2px solid #FF7043;
+  font-size: 18px;
+  margin: 10px;
 }
+@media (max-width:480px){
+  .news-box .news-pagination .btn-ctm{
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    font-size: 14px;
+    margin: 5px; 
+  }
+  .news-pagination .btn-ctm.prev, 
+  .news-pagination .btn-ctm.next{
+    width: 66px !important;
+  }
+}
+
 .news-pagination .btn-ctm.disabled:hover{
   background-color: transparent;
   color: #FF7043;
@@ -58,8 +88,5 @@
 .news-pagination .pagination-more{
   height: 40px;
   margin: 20px auto 0;
-  display: none;
-}
-.news-pagination .pagination-more .btn{
   display: none;
 }

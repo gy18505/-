@@ -25,20 +25,18 @@ $(function () {
       $logo.attr('src', 'images/' + $logo.data('logo') + '.png');
     }, 100);
   });
-
+  var timer;
   var mySwiper = new Swiper ('.banner', {
+    // autoplay : 5000,
     direction: 'horizontal',
-    loop: true,     
-    effect : 'fade',
-    fade: {
-      crossFade: true,
-    },
-    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
-      swiperAnimateCache(swiper); //隐藏动画元素 
-      swiperAnimate(swiper); //初始化完成开始动画
+    effect : 'slide',
+    parallax: true,
+    onInit: function(swiper){ 
+      swiperAnimateCache(swiper); 
+      swiperAnimate(swiper);
     }, 
     onSlideChangeEnd: function(swiper){ 
-      swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-    } 
+      swiperAnimate(swiper);
+    }
   })       
 })

@@ -3,9 +3,14 @@
   height: 620px;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
 .banner-item {
   position: relative;
-  height: 620px;
+  height: 100%;
   width: 100%;
 }
 
@@ -22,33 +27,54 @@
 }
 
 .banner-item .banner-content {
-  height: 240px;
-  padding-left: 30px;
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: #fff;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, .5);
 }
 
-@media (min-width:320px) and (max-width:480px) {
-  .content-box {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .banner-content {
-    padding: 0 15px;
-  }
+.banner-content .container {
+  margin-top: 310px;
+  transform: translateY(-50%);
 }
 
-.banner-item .banner-title {
-  width: 380px;
+.banner-title,
+.banner-action {
+  width: 390px;
   margin-top: 0;
   line-height: 1.5em;
 }
 
+@media (min-width:320px) and (max-width:480px) {
+  .banner {
+    height: 320px;
+  }
+  .banner-content .container {
+    margin-top: 160px;
+  }
+  .banner-content .banner-title,
+  .banner-content .banner-action {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .banner-content .banner-title {
+    width: 80%;
+    font-size: 18px;
+  }
+  .banner-content .banner-action .btn-ctm {
+    width: 130px;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+  .banner-action .btn-ctm:first-child {
+    margin-right: 20px !important;
+  }
+}
+
 .banner-item .banner-action {
-  width: 380px;
   margin: 30px 0;
 }
 
@@ -247,10 +273,14 @@
 }
 
 .case-card:hover {
-  margin-top: -10px;
   background-color: #f4f5f9;
   border-color: #f4f5f9;
   box-shadow: 0 0 18px #aaa;
+  transform: translate(0, -10px);
+  -webkit-transform: translate(0, -10px);
+  -moz-transform: translate(0, -10px);
+  -ms-transform: translate(0, -10px);
+  -o-transform: translate(0, -10px);
 }
 
 .case-card,
@@ -378,4 +408,3 @@
 .contact-form .form-title {
   margin: 0;
 }
-
