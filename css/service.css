@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.page-banner .content-box {
+  .page-banner .content-box {
   margin: 32px auto;
 }
 
@@ -24,11 +24,13 @@
 .page-main .page-menu {
   font-size: 0;
 }
+
 @media (min-width:320px) and (max-width:480px) {
   .page-main .page-menu {
     margin-bottom: 0 !important;
   }
 }
+
 .page-menu .btn-ctm:not(.active) {
   background: #ebebeb;
 }
@@ -37,15 +39,13 @@
   background: rgba(255, 88, 7, .7);
 }
 
-@media (min-width:320px) and (max-width:992px) {
-  .page-menu .btn-ctm {
-    margin: 10px;
-  }
-}
-
 .page-main .page-box {
   background: #fff;
   overflow: hidden;
+}
+.page-main .page-box p{
+  text-align: left;
+  line-height: 24px;
 }
 
 .page-main .page-box .box{
@@ -85,8 +85,10 @@
 }
 @media (max-width:992px){
   .box-header .header-content{
-    padding: 30px;
-    padding-bottom: 0;
+    padding: 0 30px;
+  }
+  .page-main .page-box .box{
+    padding: 20px 30px;
   }
 }
 @media (min-width:992px){
@@ -99,6 +101,9 @@
 }
 .header-content .content-title{
   margin: 20px 0;
+}
+.header-content .content-title:first-child{
+  margin-top: 0;
 }
 .header-content>p:last-child{
   margin-bottom: 0;
@@ -113,48 +118,4 @@
   .page-menu .btn-ctm {
     width: 50% !important;
   }
-}
-.page-box .page-pagination {
-  margin: 20px auto 0;
-  padding-bottom: 20px;
-}
-
-.page-box .page-pagination .btn-ctm {
-  width: 40px;
-  height: 40px;
-  line-height: 36px;
-  border: 2px solid #FF7043;
-  font-size: 18px;
-  margin: 10px;
-}
-
-@media (max-width:510px) {
-  .page-box .page-pagination .btn-ctm {
-    width: 30px;
-    height: 30px;
-    line-height: 26px;
-    font-size: 14px;
-    margin: 1px;
-  }
-  .page-pagination .btn-ctm.prev,
-  .page-pagination .btn-ctm.next {
-    width: 66px !important;
-  }
-}
-
-.page-pagination .btn-ctm.disabled:hover {
-  background-color: transparent;
-  color: #FF7043;
-}
-
-.page-pagination .btn-ctm.prev,
-.page-pagination .btn-ctm.next {
-  width: 94px;
-}
-
-.page-pagination .pagination-more {
-  height: 40px;
-  line-height: 40px;
-  margin: 20px auto 0;
-  display: none;
 }

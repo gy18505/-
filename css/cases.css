@@ -29,6 +29,12 @@
   font-size: 0;
 }
 
+@media (min-width:320px) and (max-width:480px) {
+  .page-main .page-menu {
+    margin-bottom: 0 !important;
+  }
+}
+
 .page-menu .btn-ctm:not(.active) {
   background: #ebebeb;
 }
@@ -47,18 +53,15 @@
   margin: 20px 0;
 }
 
-@media (min-width:680px) and (max-width:992px) {
+@media (min-width:320px) and (max-width:992px) {
   .page-menu .btn-ctm {
-    margin: 10px 20px;
+    width: 50% !important;
   }
 }
 
 @media (min-width:320px) and (max-width:680px) {
   .page-box .cases-list {
     padding: 0;
-  }
-  .page-menu .btn-ctm {
-    margin: 10px;
   }
 }
 
@@ -133,6 +136,7 @@
 }
 
 .card-ctm .card-body .card-desc {
+  min-height: 54px;
   color: #777;
   font-size: 13px;
 }
@@ -151,13 +155,13 @@
   margin: 10px;
 }
 
-@media (max-width:480px) {
+@media (max-width:510px) {
   .page-box .page-pagination .btn-ctm {
     width: 30px;
     height: 30px;
     line-height: 26px;
     font-size: 14px;
-    margin: 5px;
+    margin: 1px;
   }
   .page-pagination .btn-ctm.prev,
   .page-pagination .btn-ctm.next {

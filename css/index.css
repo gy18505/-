@@ -49,6 +49,11 @@
 }
 
 @media (min-width:320px) and (max-width:480px) {
+  .btn-ctm {
+    width: 130px;
+    padding: 8px 0;
+    font-size: 16px;
+  }
   .banner {
     height: 320px;
   }
@@ -64,11 +69,7 @@
     width: 80%;
     font-size: 18px;
   }
-  .banner-content .banner-action .btn-ctm {
-    width: 130px;
-    padding: 8px 0;
-    font-size: 18px;
-  }
+  
   .banner-action .btn-ctm:first-child {
     margin-right: 20px !important;
   }
@@ -82,13 +83,14 @@
   margin-right: 40px;
 }
 
-.service-list li {
-  height: 100%;
-  padding: 0 20px;
-}
-
-.service-list li>* {
-  margin: 0 auto;
+@media (max-width:768px){
+  .service-list{
+    margin-bottom: 0 !important; 
+  }
+  .service-list .service-item{
+    height: 240px;
+    margin-bottom: 20px; 
+  }
 }
 
 .service-list .service-logo {
@@ -147,11 +149,15 @@
 }
 
 .corp-info .info-box {
-  min-height: 540px;
+  height: 540px;
   position: relative;
   color: #fff;
 }
-
+@media (min-width: 320px) and (max-width: 480px){
+  .corp-info .info-box.bg-cover {
+    height: 320px !important;
+  }
+}
 .corp-info .info-box.main {
   background: #202020;
 }

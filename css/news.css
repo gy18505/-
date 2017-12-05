@@ -2,6 +2,7 @@
   width: 150px;
   height: 46px;
   line-height: 46px;
+  border: none;
   padding: 0;
   font-size: 14px;
  }
@@ -31,7 +32,6 @@
 }
 .news-menu .btn-ctm:not(.active){
   background: #ebebeb;
-  border: none;
  }
 .news-menu .btn-ctm:not(.active):hover{
   background: rgba(255, 88, 7, .7);
@@ -51,11 +51,13 @@
 .news-item .content-desc .news-author{
   margin: 0 20px;
 }
-.news-box .news-pagination{
-  margin: 0 auto;
-  padding-bottom: 30px;
+
+.page-pagination {
+  margin: 20px auto 0;
+  padding-bottom: 20px;
 }
-.news-box .news-pagination .btn-ctm{
+
+.page-pagination .btn-ctm {
   width: 40px;
   height: 40px;
   line-height: 36px;
@@ -63,30 +65,34 @@
   font-size: 18px;
   margin: 10px;
 }
-@media (max-width:480px){
-  .news-box .news-pagination .btn-ctm{
+
+@media (max-width:510px) {
+  .page-pagination .btn-ctm {
     width: 30px;
     height: 30px;
     line-height: 26px;
     font-size: 14px;
-    margin: 5px; 
+    margin: 1px;
   }
-  .news-pagination .btn-ctm.prev, 
-  .news-pagination .btn-ctm.next{
+  .page-pagination .btn-ctm.prev,
+  .page-pagination .btn-ctm.next {
     width: 66px !important;
   }
 }
 
-.news-pagination .btn-ctm.disabled:hover{
+.page-pagination .btn-ctm.disabled:hover {
   background-color: transparent;
   color: #FF7043;
 }
-.news-pagination .btn-ctm.prev,
-.news-pagination .btn-ctm.next{
+
+.page-pagination .btn-ctm.prev,
+.page-pagination .btn-ctm.next {
   width: 94px;
 }
-.news-pagination .pagination-more{
+
+.page-pagination .pagination-more {
   height: 40px;
+  line-height: 40px;
   margin: 20px auto 0;
   display: none;
 }
