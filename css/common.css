@@ -274,9 +274,10 @@ ul li a:hover {
   line-height: 60px;
 }
 
-.navbar-mobile .sublist li a{
+.navbar-mobile .sublist li a {
   font-size: 14px;
 }
+
 .navbar-menu .sublist li a:hover {
   background: rgba(0, 0, 0, .8);
   border: none;
@@ -302,6 +303,13 @@ ul li a:hover {
   left: 0px;
   right: 0px;
   z-index: 9999;
+}
+
+@media (min-width:992px) {
+  .navbar-mobile {
+    display: none !important;
+    height: 0 !important;
+  }
 }
 
 .navbar-mobile .menu-list li,
@@ -370,6 +378,29 @@ ul li a:hover {
   color: #fff;
 }
 
+@media (max-width:480px) {
+  .news-banner,
+  .page-banner {
+    height: 120px !important;
+  }
+  .news-banner .container,
+  .page-banner .container {
+    margin: 0 !important;
+    padding: 10px 0 !important;
+  }
+}
+
+.news-main .btn-ctm,
+.page-main .btn-ctm {
+  width: 150px;
+  height: 46px;
+  line-height: 46px;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+
 /* <====== footer ======> */
 
 .footer {
@@ -410,6 +441,22 @@ ul li a:hover {
   color: #EFEFEF;
 }
 
+.copyright a {
+  color: #fff
+}
+
+.copyright p {
+  margin: 0;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copyright .content-box {
+  padding: 15px 0;
+}
+
 @media (max-width: 992px) {
   .copyright .row-content {
     text-align: center!important;
@@ -424,6 +471,6 @@ ul li a:hover {
     text-align: right!important;
   }
   .copyright .row-content .col-detail:last-child {
-    white-space: nowrap;
+    white-space: nowrap !important;
   }
 }

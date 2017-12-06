@@ -2,23 +2,33 @@
   padding: 40px 0;
   background: #f4f5f9;
 }
-.page-main .content-box{
+
+.page-main .content-box {
   padding: 30px 40px;
   background: #fff;
 }
-.article .article-header{
+
+.article .article-header {
   margin-bottom: 20px;
   border-bottom: 1px solid #ededed;
 }
-.article .article-header .article-author{
-  margin: 0 10px;
-}
-.article .article-main p{
-  margin: 20px 0;
-}
-.article .article-main p:first-child{
+
+.article .article-header .article-title {
   margin-top: 0;
 }
-.article .article-main p:last-child{
+
+.article .article-header .article-author {
+  margin: 0 10px;
+}
+
+.article .article-main p {
+  margin: 20px 0;
+}
+
+.article .article-main p:first-child {
+  margin-top: 0;
+}
+
+.article .article-main p:last-child {
   margin-bottom: 0;
 }

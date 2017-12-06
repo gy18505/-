@@ -3,11 +3,6 @@
   height: 620px;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 300px;
-}
-
 .banner-item {
   position: relative;
   height: 100%;
@@ -50,28 +45,32 @@
 
 @media (min-width:320px) and (max-width:480px) {
   .btn-ctm {
-    width: 130px;
+    width: 45%;
     padding: 8px 0;
-    font-size: 16px;
+    font-size: 14px;
   }
   .banner {
-    height: 320px;
+    height: 220px;
   }
   .banner-content .container {
-    margin-top: 160px;
+    margin-top: 130px;
   }
   .banner-content .banner-title,
   .banner-content .banner-action {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .banner-content .banner-title {
+  .banner-content .banner-title,
+  .banner-content .banner-action {
     width: 80%;
+  }
+  .banner-content .banner-title {
     font-size: 18px;
   }
-  
   .banner-action .btn-ctm:first-child {
-    margin-right: 20px !important;
+    margin-right: 8% !important;
+    background: #ff5807;
+    color: #fff;
   }
 }
 
@@ -83,22 +82,24 @@
   margin-right: 40px;
 }
 
-@media (max-width:768px){
-  .service-list{
-    margin-bottom: 0 !important; 
+@media (max-width:768px) {
+  .service-list {
+    margin-bottom: 0 !important;
   }
-  .service-list .service-item{
+  .service-list .service-item {
     height: 240px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 }
 
 .service-list .service-logo {
   display: inline-block;
-  height: 70px;
   width: 70px;
-  padding: 12px;
+  height: 70px;
+  line-height: 64px;
+  padding: 0;
   border: 2px solid #959595;
+  text-align: center;
   overflow: hidden;
 }
 
@@ -122,8 +123,8 @@
 }
 
 .service-list .service-logo>img {
-  width: 45px;
-  height: 45px;
+  width: 44px;
+  height: 44px;
   transition: all .35s ease-in-out;
   -webkit-transition: all .35s ease-in-out;
   -moz-transition: all .35s ease-in-out;
@@ -153,11 +154,13 @@
   position: relative;
   color: #fff;
 }
-@media (min-width: 320px) and (max-width: 480px){
+
+@media (min-width: 320px) and (max-width: 480px) {
   .corp-info .info-box.bg-cover {
     height: 320px !important;
   }
 }
+
 .corp-info .info-box.main {
   background: #202020;
 }
@@ -246,6 +249,17 @@
   }
 }
 
+@media (max-width:360px) {
+  .info-list .list-img {
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 10px;
+  }
+  .info-list .info-content {
+    width: 245px !important;
+  }
+}
+
 .info-list .info-content {
   width: 460px;
 }
@@ -287,6 +301,11 @@
   -moz-transform: translate(0, -10px);
   -ms-transform: translate(0, -10px);
   -o-transform: translate(0, -10px);
+}
+
+.case-card:hover a.link {
+  color: #D9573B;
+  text-decoration: underline;
 }
 
 .case-card,
