@@ -3,6 +3,11 @@
   height: 620px;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
 .banner-item {
   position: relative;
   height: 100%;
@@ -67,10 +72,11 @@
   .banner-content .banner-title {
     font-size: 18px;
   }
+  
   .banner-action .btn-ctm:first-child {
-    margin-right: 8% !important;
+    margin-right: 6% !important;
     background: #ff5807;
-    color: #fff;
+    color:#fff;
   }
 }
 
@@ -79,28 +85,30 @@
 }
 
 .banner-action .btn-ctm:first-child {
-  margin-right: 40px;
+  margin-right: 6% !important;
+  background: #ff5807;
+  color:#fff;
 }
 
-@media (max-width:768px) {
-  .service-list {
-    margin-bottom: 0 !important;
+@media (max-width:768px){
+  .service-list{
+    margin-bottom: 0 !important; 
   }
-  .service-list .service-item {
+  .service-list .service-item{
     height: 240px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
   }
 }
 
 .service-list .service-logo {
   display: inline-block;
-  width: 70px;
   height: 70px;
+  width: 70px;
   line-height: 64px;
-  padding: 0;
   border: 2px solid #959595;
-  text-align: center;
   overflow: hidden;
+  padding: 0;
+  text-align: center;
 }
 
 .service-list .service-logo:hover {
@@ -113,6 +121,65 @@
   -o-transform: rotate(-45deg);
 }
 
+.service-item .service-logo:hover .logo-pic{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.service-item:nth-child(4) .service-logo .logo-pic{
+  width: 40px;
+  height: 40px;
+  margin: 13px auto;
+  background-size: 40px 40px;
+}
+
+.service-item:nth-child(6) .service-logo .logo-pic{
+  width: 50px;
+  height: 50px;
+  margin: 8px auto;
+  background-size: 50px 50px;
+}
+
+.service-item:nth-child(1) .service-logo .logo-pic{
+  background-image: url('../images/service-monitor.png') !important;
+}
+.service-item:nth-child(1) .service-logo:hover .logo-pic{
+  background-image: url('../images/service-monitor-transparent.png') !important;
+}
+.service-item:nth-child(2) .service-logo .logo-pic{
+  background-image: url('../images/service-marketing.png') !important;
+}
+.service-item:nth-child(2) .service-logo:hover .logo-pic{
+  background-image: url('../images/service-marketing-transparent.png') !important;
+}
+.service-item:nth-child(3) .service-logo .logo-pic{
+  background-image: url('../images/service-activity.png') !important;
+}
+.service-item:nth-child(3) .service-logo:hover .logo-pic{
+  background-image: url('../images/service-activity-transparent.png') !important;
+}
+.service-item:nth-child(4) .service-logo .logo-pic{
+  background-image: url('../images/service-design.png') !important;
+}
+.service-item:nth-child(4) .service-logo:hover .logo-pic{
+  background-image: url('../images/service-design-transparent.png') !important;
+}
+.service-item:nth-child(5) .service-logo .logo-pic{
+  background-image: url('../images/service-media.png') !important;
+}
+.service-item:nth-child(5) .service-logo:hover .logo-pic{
+  background-image: url('../images/service-media-transparent.png') !important;
+}
+.service-item:nth-child(6) .service-logo .logo-pic{
+  background-image: url('../images/service-video.png') !important;
+}
+.service-item:nth-child(6) .service-logo:hover .logo-pic{
+  background-image: url('../images/service-video-transparent.png') !important;
+}
+
 .service-list .service-logo,
 .service-list .service-logo:hover {
   transition: all .35s ease-in-out;
@@ -122,19 +189,17 @@
   -o-transition: all .35s ease-in-out;
 }
 
-.service-list .service-logo>img {
+.service-list .service-logo .logo-pic {
   width: 44px;
   height: 44px;
+  margin: 11px auto;
+  background-repeat: no-repeat;
+  background-size: 44px 44px;
   transition: all .35s ease-in-out;
   -webkit-transition: all .35s ease-in-out;
   -moz-transition: all .35s ease-in-out;
   -ms-transition: all .35s ease-in-out;
   -o-transition: all .35s ease-in-out;
-}
-
-.service-list .service-logo>img.smaller {
-  width: 40px;
-  height: 40px;
 }
 
 .service-list .bar-black {
@@ -154,13 +219,11 @@
   position: relative;
   color: #fff;
 }
-
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px){
   .corp-info .info-box.bg-cover {
     height: 320px !important;
   }
 }
-
 .corp-info .info-box.main {
   background: #202020;
 }
@@ -248,14 +311,13 @@
     width: 260px !important;
   }
 }
-
 @media (max-width:360px) {
-  .info-list .list-img {
+  .info-list .list-img{
     width: 30px !important;
     height: 30px !important;
     margin-right: 10px;
   }
-  .info-list .info-content {
+  .info-list .info-content{
     width: 245px !important;
   }
 }
@@ -303,11 +365,6 @@
   -o-transform: translate(0, -10px);
 }
 
-.case-card:hover a.link {
-  color: #D9573B;
-  text-decoration: underline;
-}
-
 .case-card,
 .case-card:hover {
   transition: all .3s ease-in-out;
@@ -333,6 +390,7 @@
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+   width:100%;
 }
 
 .card-ctm .card-body,
@@ -432,4 +490,16 @@
 
 .contact-form .form-title {
   margin: 0;
+}
+
+
+@media (max-width:480px){
+  .banner{
+    background-image:url('../update/bg-mobile.jpg');
+  }
+}
+
+.card-ctm:hover a.link {
+  color: #D9573B;
+  text-decoration: underline;
 }
